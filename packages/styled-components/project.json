@@ -1,0 +1,25 @@
+{
+    "root": "packages/styled-components",
+    "sourceRoot": "packages/styled-components/src",
+    "projectType": "library",
+    "tags": [],
+    "targets": {
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": [
+                    "packages/styled-components/**/*.{ts,tsx,js,jsx}"
+                ]
+            }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/packages/styled-components"],
+            "options": {
+                "jestConfig": "packages/styled-components/jest.config.js",
+                "passWithNoTests": true
+            }
+        }
+    }
+}
