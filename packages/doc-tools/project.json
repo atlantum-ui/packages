@@ -1,0 +1,23 @@
+{
+    "root": "packages/doc-tools",
+    "sourceRoot": "packages/doc-tools/src",
+    "projectType": "library",
+    "tags": [],
+    "targets": {
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["packages/doc-tools/**/*.{ts,tsx,js,jsx}"]
+            }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/packages/doc-tools"],
+            "options": {
+                "jestConfig": "packages/doc-tools/jest.config.js",
+                "passWithNoTests": true
+            }
+        }
+    }
+}

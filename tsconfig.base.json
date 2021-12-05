@@ -15,6 +15,7 @@
         "skipDefaultLibCheck": true,
         "baseUrl": ".",
         "paths": {
+            "@atlantum/doc-tools": ["packages/doc-tools/src/index.ts"],
             "@atlantum/sc": ["packages/styled-components/src/index.ts"],
             "@atlantum/tokens": ["packages/tokens/src/index.ts"]
         }

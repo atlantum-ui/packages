@@ -1,6 +1,7 @@
 {
     "version": 2,
     "projects": {
+        "doc-tools": "packages/doc-tools",
         "styled-components": "packages/styled-components",
         "tokens": "packages/tokens"
     }
