@@ -3,7 +3,9 @@
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
-        "sc-patch": "npm version patch --prefix dist/packages/styled-components"
+        "sc-patch": "npm version patch --prefix dist/packages/styled-components",
+        "sc-minor": "npm version minor --prefix dist/packages/styled-components",
+        "sc-major": "npm version major --prefix dist/packages/styled-components"
     },
     "private": true,
     "dependencies": {
