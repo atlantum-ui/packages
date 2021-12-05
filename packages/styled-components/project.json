@@ -1,0 +1,44 @@
+{
+    "root": "packages/styled-components",
+    "sourceRoot": "packages/styled-components/src",
+    "projectType": "library",
+    "tags": [],
+    "targets": {
+        "build": {
+            "executor": "@nrwl/web:package",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "outputPath": "dist/packages/styled-components",
+                "tsConfig": "packages/styled-components/tsconfig.lib.json",
+                "project": "packages/styled-components/package.json",
+                "entryFile": "packages/styled-components/src/index.ts",
+                "external": ["react/jsx-runtime"],
+                "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+                "assets": [
+                    {
+                        "glob": "packages/styled-components/README.md",
+                        "input": ".",
+                        "output": "."
+                    }
+                ]
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": [
+                    "packages/styled-components/**/*.{ts,tsx,js,jsx}"
+                ]
+            }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/packages/styled-components"],
+            "options": {
+                "jestConfig": "packages/styled-components/jest.config.js",
+                "passWithNoTests": true
+            }
+        }
+    }
+}

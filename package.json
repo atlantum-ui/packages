@@ -2,7 +2,9 @@
     "name": "atlantum",
     "version": "0.0.0",
     "license": "MIT",
-    "scripts": {},
+    "scripts": {
+        "sc-patch": "npm version patch --prefix dist/packages/styled-components"
+    },
     "private": true,
     "dependencies": {
         "core-js": "^3.6.5",

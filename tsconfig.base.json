@@ -15,10 +15,8 @@
         "skipDefaultLibCheck": true,
         "baseUrl": ".",
         "paths": {
-            "@atlantum/foundation": ["packages/foundation/src/index.ts"],
-            "@atlantum/styled-components": [
-                "packages/styled-components/src/index.ts"
-            ]
+            "@atlantum/sc": ["packages/styled-components/src/index.ts"],
+            "@atlantum/tokens": ["packages/tokens/src/index.ts"]
         }
     },
     "exclude": ["node_modules", "tmp"]

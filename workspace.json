@@ -1,7 +1,7 @@
 {
     "version": 2,
     "projects": {
-        "foundation": "packages/foundation",
-        "styled-components": "packages/styled-components"
+        "styled-components": "packages/styled-components",
+        "tokens": "packages/tokens"
     }
 }
