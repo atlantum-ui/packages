@@ -3,6 +3,7 @@
     "projects": {
         "doc-tools": "packages/doc-tools",
         "styled-components": "packages/styled-components",
+        "styled-components-e2e": "packages/styled-components-e2e",
         "tokens": "packages/tokens"
     }
 }
